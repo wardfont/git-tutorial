@@ -14,7 +14,7 @@ GitHub is where a lot of the software you use is maintained.
 
 ## What I do with IT
 
-- Backup my coding, notes and pdfs
+- Backup my coding, notes and pdfs (version control only works for plain text files)
 - Searching through old code
 - Looking at the source code of R-packages
 - Raising issues to the developers of R-packages
@@ -44,6 +44,10 @@ git config --global init.defaultBranch main
 ```
 
 This will write your configurations in `~/.gitconfig` and your credentials in `~/.git-credentials`. Make sure the latter is never publicly available, it is not encrypted.
+
+On GitHub, from your profile pictures, go to settings, choose "Developer options", "Personal access tokens", "Tokens (classic)", and choose "Generate new token (classic)".
+
+Give it a relevant name (e.g. device you are using), set the desired expiration, and check the "repo" box. Create the token and copy and paste it somewhere for later.
 
 ## User interface
 
@@ -115,8 +119,33 @@ If you want to avoid using a terminal text editor:
 git commit -m "my message"
 ``` 
 
-## More advanced features of GitHub
+Make sure to keep this message short.
 
+## Creating and adding a remote repository
+
+On GitHub, click on the "+" next to your profile picture, and create a new repository. Choose a name, write a description, and set if you want it to be public or private.
+
+Once created, you get two code snippets: one for if you want to clone this new repository, the other one for if you want to push an existing repository. We choose the second option. 
+
+Copy the code snippet and paste it in Git Bash. In command line environments, you can paste using "Ctrl-Shift-C" and "Ctrl-Shift-V". Press enter.
+
+## push
+
+Now that we have a remote repository, we can push our local repository to it:
+
+```bash
+git push
+```
+
+Check on GitHub if your push got through.
+
+## fetch & pull
+
+If your remote repository has changes, you can use `git fetch` to see what those changes are. If you want to integrate those changes in your local workspace, you can use `git pull`.
+
+## Other features of Git
+
+- Cloning
 - `.gitingore`
 - Merging
 - Branching
