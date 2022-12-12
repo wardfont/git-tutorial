@@ -1,7 +1,11 @@
 ---
-title: FNL Git tutorial
-author: Ward Fonteyn
-date: 13/12/2022 
+title: "FNL Git tutorial"
+author: "Ward Fonteyn"
+date: "13/12/2022"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+  beamer_presentation: default
 ---
 
 ## Why do we want to know?
@@ -86,9 +90,23 @@ git status
 
 Check the status of your git repository.
 
+## Create a readme file
+
+```markdown
+# This is a title
+
+## This is a heading
+
+This is text.
+
+## This is another heading
+
+This is some other text.
+```
+
 ## add
 
-If we create a file in our workspace, we can then add it to our index. They are not yet part of our git repository.
+We can now the file to our index. They are not yet part of our git repository.
 
 ```bash
 git add filename
