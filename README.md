@@ -4,8 +4,6 @@ author: "Ward Fonteyn"
 date: "13/12/2022"
 output:
   ioslides_presentation: default
-  beamer_presentation: default
-  slidy_presentation: default
 ---
 
 ## What is Git and GitHub?
