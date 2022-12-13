@@ -281,3 +281,7 @@ If more people would use Git and GitHub, sharing code, and collaborating in the 
 # Git: Multiplayer Notepad
 
 The end
+
+## Further resources
+
+- Git tutorial for R users: https://happygitwithr.com/
