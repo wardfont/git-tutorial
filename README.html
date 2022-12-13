@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>A short introduction to git going</title>
+  <title>Everything you need to Git going</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,7 +19,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'A short introduction to git going',
+                title: 'Everything you need to Git going',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -179,26 +179,37 @@ slide:not(.current) .plotly.html-widget{
           </hgroup>
   </slide>
 
-<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Git</h2></hgroup><article  id="git">
-
-</article></slide><slide class=""><hgroup><h2>Why do we want to know?</h2></hgroup><article  id="why-do-we-want-to-know">
-
-<p>Git is a <strong>(collaborative) version control</strong> software.</p>
-
-<p>Git is the software on which GitHub, GitLab, Bitbucket, … rely.</p>
-
-<p>GitHub is where a lot of the software you use is maintained.</p>
-
-</article></slide><slide class=""><hgroup><h2>What I do with IT</h2></hgroup><article  id="what-i-do-with-it">
+<slide class=""><hgroup><h2>What is Git and GitHub?</h2></hgroup><article  id="what-is-git-and-github">
 
 <ul>
-<li>Backup my coding, notes and pdfs (version control only works for plain text files)</li>
+<li>Git is a <strong>distributed version control</strong> software (°2005)</li>
+<li>Git is the software on which GitHub, GitLab, Bitbucket, … rely.</li>
+<li>GitHub is where a lot of the software you use is maintained and developed.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Why you might want to use/understand Git and GitHub</h2></hgroup><article  id="why-you-might-want-to-useunderstand-git-and-github">
+
+<ul>
+<li>It is <strong>Track Changes</strong> for your coding.</li>
+<li>You can <strong>roll back</strong> to any point in time.</li>
+<li>You can <strong>collaborate</strong> on code while offline.</li>
+<li>Everything is on GitHub. You might as well be too.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>What I use it for specifically</h2></hgroup><article  id="what-i-use-it-for-specifically">
+
+<ul>
+<li>Backup my coding, notes and pdfs: files and history</li>
 <li>Searching through old code</li>
 <li>Looking at the source code of R-packages</li>
 <li>Raising issues to the developers of R-packages</li>
 </ul>
 
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Git</h2></hgroup><article  id="git">
+
 </article></slide><slide class=""><hgroup><h2>Basic concept</h2></hgroup><article  id="basic-concept">
+
+<p>Changes are tracked on a line-to-line basis.</p>
 
 <img src='data:image/png;base64,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' title=''/>
 
@@ -209,15 +220,17 @@ slide:not(.current) .plotly.html-widget{
 <p>We will:</p>
 
 <ul>
-<li>Make a new repository</li>
-<li>Add a remote GitHub repository to it</li>
+<li>Make a new Git repository</li>
 <li>Create files in our workspace</li>
 <li>Add them to our index</li>
 <li>Commit them to our local repository</li>
-<li>Push them to the remote on GitHub</li>
+<li>Add a remote GitHub repository to it</li>
+<li>Push them to the remote repository on GitHub</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Credentials</h2></hgroup><article  id="credentials">
+
+<p>Edit the following and paste it in your command line environment. Press enter.</p>
 
 <pre class = 'prettyprint lang-bash'>git config --global credential.helper store
 git config --global user.email &quot;your.email@email.com&quot;
@@ -257,6 +270,14 @@ git config --global init.defaultBranch main</pre>
 
 <p>This turns your workspace into a git repository and creates a <code>.git</code> directory to store all git related files.</p>
 
+</article></slide><slide class=""><hgroup><h2>Hidden items</h2></hgroup><article  id="hidden-items">
+
+<p>There are a lot of hidden items on your computer. An item is hidden when it starts with a &ldquo;.&rdquo;</p>
+
+<p>Most of the time these files are configurations.</p>
+
+<p>In file explorer, Choose &ldquo;View&rdquo;, &ldquo;Show/hide&rdquo;, and check &ldquo;hidden items&rdquo;.</p>
+
 </article></slide><slide class=""><hgroup><h2>status</h2></hgroup><article  id="status">
 
 <pre class = 'prettyprint lang-bash'>git status</pre>
@@ -265,7 +286,7 @@ git config --global init.defaultBranch main</pre>
 
 </article></slide><slide class=""><hgroup><h2>Create a readme file</h2></hgroup><article  id="create-a-readme-file">
 
-<pre class = 'prettyprint lang-markdown'># This is a title
+<pre class = 'prettyprint lang-md'># This is a title
 
 ## This is a heading
 
@@ -307,13 +328,15 @@ This is some other text.</pre>
 
 <p>Once created, you get two code snippets: one for if you want to clone this new repository, the other one for if you want to push an existing repository. We choose the second option.</p>
 
-<p>Copy the code snippet and paste it in Git Bash. In command line environments, you can paste using &ldquo;Ctrl-Shift-C&rdquo; and &ldquo;Ctrl-Shift-V&rdquo;. Press enter.</p>
+<p>Copy the code snippet, paste it in your command line environment and execute it.</p>
 
 </article></slide><slide class=""><hgroup><h2>push</h2></hgroup><article  id="push">
 
 <p>Now that we have a remote repository, we can push our local repository to it:</p>
 
-<pre class = 'prettyprint lang-bash'>git push</pre>
+<pre class = 'prettyprint lang-bash'>git push </pre>
+
+<p>You will need to paste your access token from earlier here.</p>
 
 <p>Check on GitHub if your push got through.</p>
 
@@ -323,20 +346,63 @@ This is some other text.</pre>
 
 </article></slide><slide class=""><hgroup><h2>Using a GUI</h2></hgroup><article  id="using-a-gui">
 
-<p>In Rstudio: New project from existing directory we just created.</p>
+<p>Almost all IDE’s integrate Git:</p>
 
-<p>You will see a Git tab in the top right panel.</p>
+<ul>
+<li>Rstudio</li>
+<li>VSCode</li>
+<li>…</li>
+</ul>
 
 <p>There are a lot of different ways to interact with git, but they do the same thing as we did in the command line.</p>
+
+</article></slide><slide class=""><hgroup><h2>Adding existing larger project</h2></hgroup><article  id="adding-existing-larger-project">
+
+<p>Git is not meant to deal with large files. <strong>50 MB is the limit</strong> for what you want to push.</p>
+
+<p>If you have large files, like data, you want to exclude them in the <code>.gitignore</code> file.</p>
+
+<pre class = 'prettyprint lang-bash'>data/
+*.txt
+test.R</pre>
+
+<p>This will exclude the whole data directory, all files ending in <code>.txt</code> even in subdirectories, and all <code>test.R</code> files even in subdirectories.</p>
+
+</article></slide><slide class=""><hgroup><h2>Getting rid of Git</h2></hgroup><article  id="getting-rid-of-git">
+
+<p>If you delete the <code>.git</code> directory, you have succeeded.</p>
+
+</article></slide><slide class=""><hgroup><h2>Cloud storage mishaps</h2></hgroup><article  id="cloud-storage-mishaps">
+
+<p>OneDrive can break your git repositories.</p>
+
+<p>Your files will be fine, but you might run into push-pull problems.</p>
 
 </article></slide><slide class=""><hgroup><h2>Other features of Git</h2></hgroup><article  id="other-features-of-git">
 
 <ul>
 <li>Cloning</li>
-<li><code>.gitingore</code></li>
+<li>Diffing</li>
+<li>Stashing</li>
 <li>Merging</li>
 <li>Branching</li>
 </ul>
+
+</article></slide><slide class=""><hgroup><h2>How I use it</h2></hgroup><article  id="how-i-use-it">
+
+<p>I write most things in plain text format:</p>
+
+<ul>
+<li><code>.md</code>, <code>.R</code>, <code>.Rmd</code>, <code>.org</code>, <code>.bib</code>, <code>.csv</code> …</li>
+</ul>
+
+<p>But also system configurations and paper pdfs.</p>
+
+<p>Things I want to keep track of are in a git repository. I git add commit push every so often when I think of it. For me it is more about having a continuous process backup.</p>
+
+<pre class = 'prettyprint lang-bash'>git add .
+git commit -m &quot;short message&quot;
+git push</pre>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>GitHub</h2></hgroup><article  id="github">
 
@@ -344,8 +410,10 @@ This is some other text.</pre>
 
 <p>&ldquo;Where the world builds software&rdquo;</p>
 
+<p>Features I want to highlight:</p>
+
 <ul>
-<li>Easy searching</li>
+<li>Searching</li>
 <li>Issues</li>
 </ul>
 
@@ -358,6 +426,25 @@ This is some other text.</pre>
 </article></slide><slide class=""><hgroup><h2>Issues</h2></hgroup><article  id="issues">
 
 <p>Like StackOverflow, but more up-to-date, and it’s the developer answering.</p>
+
+</article></slide><slide class=""><hgroup><h2>Open Science</h2></hgroup><article  id="open-science">
+
+<p>GitHub is a great way to make your code available. Mind the limitation on data size however.</p>
+
+<p>Powerful combo: <strong>Git and Targets R package</strong>.</p>
+
+</article></slide><slide class=""><hgroup><h2>FNL code sharing</h2></hgroup><article  id="fnl-code-sharing">
+
+<p>Nobody uses the <code>K:</code> drive. Especially not for coding.</p>
+
+<p>If more people would use Git and GitHub, sharing code, and collaborating in the office would be a lot easier</p>
+
+<ul>
+<li>Searching</li>
+<li>History</li>
+<li>Author</li>
+<li>Changing</li>
+</ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Git: Multiplayer Notepad</h2></hgroup><article  id="git-multiplayer-notepad">
 

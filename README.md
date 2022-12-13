@@ -1,32 +1,38 @@
 ---
-title: "A short introduction to git going"
+title: "Everything you need to Git going"
 author: "Ward Fonteyn"
 date: "13/12/2022"
 output:
   ioslides_presentation: default
-  slidy_presentation: default
   beamer_presentation: default
+  slidy_presentation: default
 ---
 
-# Git
+## What is Git and GitHub?
 
+- Git is a **distributed version control** software (°2005)
+- Git is the software on which GitHub, GitLab, Bitbucket, ... rely.
+- GitHub is where a lot of the software you use is maintained and developed.
 
-## Why do we want to know?
+## Why you might want to use/understand Git and GitHub
 
-Git is a **(collaborative) version control** software.
+- It is **Track Changes** for your coding.
+- You can **roll back** to any point in time.
+- You can **collaborate** on code while offline.
+- Everything is on GitHub. You might as well be too.
 
-Git is the software on which GitHub, GitLab, Bitbucket, ... rely.
+## What I use it for specifically
 
-GitHub is where a lot of the software you use is maintained.
-
-## What I do with IT
-
-- Backup my coding, notes and pdfs (version control only works for plain text files)
+- Backup my coding, notes and pdfs: files and history
 - Searching through old code
 - Looking at the source code of R-packages
 - Raising issues to the developers of R-packages
 
+# Git
+
 ## Basic concept
+
+Changes are tracked on a line-to-line basis.
 
 ![](./pictures/basic-concept.png)
 
@@ -36,14 +42,16 @@ Files that are not yet added are **Untracked**. Files that are added, but have c
 
 We will:
 
-- Make a new repository
-- Add a remote GitHub repository to it
+- Make a new Git repository
 - Create files in our workspace
 - Add them to our index
 - Commit them to our local repository
-- Push them to the remote on GitHub
+- Add a remote GitHub repository to it
+- Push them to the remote repository on GitHub
 
 ## Credentials
+
+Edit the following and paste it in your command line environment. Press enter.
 
 ```bash
 git config --global credential.helper store
@@ -87,6 +95,14 @@ git init
 
 This turns your workspace into a git repository and creates a `.git` directory to store all git related files.
 
+## Hidden items
+
+There are a lot of hidden items on your computer. An item is hidden when it starts with a "."
+
+Most of the time these files are configurations.
+
+In file explorer, Choose "View", "Show/hide", and check "hidden items".
+
 ## status
 
 ```bash
@@ -97,7 +113,7 @@ Check the status of your git repository.
 
 ## Create a readme file
 
-```markdown
+```md
 # This is a title
 
 ## This is a heading
@@ -150,15 +166,17 @@ On GitHub, click on the "+" next to your profile picture, and create a new repos
 
 Once created, you get two code snippets: one for if you want to clone this new repository, the other one for if you want to push an existing repository. We choose the second option. 
 
-Copy the code snippet and paste it in Git Bash. In command line environments, you can paste using "Ctrl-Shift-C" and "Ctrl-Shift-V". Press enter.
+Copy the code snippet, paste it in your command line environment and execute it. 
 
 ## push
 
 Now that we have a remote repository, we can push our local repository to it:
 
 ```bash
-git push
-```
+git push 
+``` 
+
+You will need to paste your access token from earlier here.
 
 Check on GitHub if your push got through.
 
@@ -168,18 +186,61 @@ If your remote repository has changes, you can use `git fetch` to see what those
 
 ## Using a GUI
 
-In Rstudio: New project from existing directory we just created.
+Almost all IDE's integrate Git:
 
-You will see a Git tab in the top right panel.
+- Rstudio
+- VSCode
+- ...
 
 There are a lot of different ways to interact with git, but they do the same thing as we did in the command line.
+
+## Adding existing larger project
+
+Git is not meant to deal with large files. **50 MB is the limit** for what you want to push.
+
+If you have large files, like data, you want to exclude them in the `.gitignore` file.
+
+```bash
+data/
+*.txt
+test.R
+```
+
+This will exclude the whole data directory, all files ending in `.txt` even in subdirectories, and all `test.R` files even in subdirectories.
+
+## Getting rid of Git
+
+If you delete the `.git` directory, you have succeeded.
+
+## Cloud storage mishaps
+
+OneDrive can break your git repositories.
+
+Your files will be fine, but you might run into push-pull problems.
 
 ## Other features of Git
 
 - Cloning
-- `.gitingore`
+- Diffing
+- Stashing
 - Merging
 - Branching
+
+## How I use it
+
+I write most things in plain text format:
+
+- `.md`, `.R`, `.Rmd`, `.org`, `.bib`, `.csv` ...
+
+But also system configurations and paper pdfs.
+
+Things I want to keep track of are in a git repository. I git add commit push every so often when I think of it. For me it is more about having a continuous process backup.
+
+```bash
+git add .
+git commit -m "short message"
+git push
+``` 
 
 # GitHub
 
@@ -187,7 +248,9 @@ There are a lot of different ways to interact with git, but they do the same thi
 
 "Where the world builds software"
 
-- Easy searching
+Features I want to highlight:
+
+- Searching
 - Issues
 
 ## Searching code
@@ -200,7 +263,23 @@ Search through all their code and history.
 
 Like StackOverflow, but more up-to-date, and it's the developer answering.
 
-# Git: Multiplayer Notepad
+## Open Science
 
+GitHub is a great way to make your code available. Mind the limitation on data size however.
+
+Powerful combo: **Git and Targets R package**.
+
+## FNL code sharing
+
+Nobody uses the `K:` drive. Especially not for coding.
+
+If more people would use Git and GitHub, sharing code, and collaborating in the office would be a lot easier
+
+- Searching
+- History
+- Author
+- Changing
+
+# Git: Multiplayer Notepad
 
 The end
